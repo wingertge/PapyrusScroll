@@ -26,6 +26,12 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+    <moduleType id="SKYRIM_SE_MODULE" implementationClass="org.genguava.papyrusscroll.module.SkyrimSEModuleType" />
+    <sdkType implementation="org.genguava.papyrusscroll.module.SkyrimSESdkType" />
+    <framework.type implementation="org.genguava.papyrusscroll.module.SKSE64Framework" />
+    <applicationService id="PAPYRUS_PACKAGES" serviceImplementation="org.genguava.papyrusscroll.module.PapyrusPackageService"/>
+    <moduleService id="PAPYRUS_MODULE_PACKAGES" serviceImplementation="org.genguava.papyrusscroll.module.PapyrusModulePackageService" />
+    <fileTypeFactory implementation="org.genguava.papyrusscroll.PapyrusFileTypeFactory" />
   </extensions>
 
   <actions>
